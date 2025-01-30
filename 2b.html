@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timetable</title>
+</head>
+<body>
+    <!-- Table with caption -->
+    <table cellspacing="5" cellpadding="10" border="2">
+        <!-- Table Caption -->
+        <caption><strong>Class Timetable</strong></caption>
+
+        <!-- Table Header Row -->
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+
+        <!-- First Row -->
+        <tr>
+            <td>9:00 - 11:00</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Science</td>
+            <td>History</td>
+            <td>Geography</td>
+        </tr>
+
+        <!-- Second Row -->
+        <tr>
+            <td>11:00 - 1:00</td>
+            <td>Physics</td>
+            <td>Math</td>
+            <td>English</td>
+            <td>Biology</td>
+            <td>Physics</td>
+        </tr>
+
+        <!-- Third Row with Rowspan for Breaks -->
+        <tr>
+            <td rowspan="2">1:00 - 3:00</td> <!-- Rowspan for break time -->
+            <td colspan="5" style="text-align: center; font-weight: bold; background-color: #f0f0f0;">Lunch Break</td> <!-- Lunch break across all columns -->
+        </tr>
+
+        <!-- Fourth Row (Meditation) -->
+        <tr>
+            <td colspan="5" style="text-align: center; font-weight: bold; background-color: #e0e0ff;">Meditation</td> <!-- Meditation break across all columns -->
+        </tr>
+
+        <!-- Fifth Row -->
+        <tr>
+            <td>3:00 - 5:00</td>
+            <td>Chemistry</td>
+            <td>Math</td>
+            <td>Physics</td>
+            <td>History</td>
+            <td>Geography</td>
+        </tr>
+    </table>
+</body>
+</html>
