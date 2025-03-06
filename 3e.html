@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector Example</title>
+    <style>
+        a[href] {
+            color: green;
+            /* text-decoration: none; */
+        }
+
+        input[type="text"] {
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+
+        a[href*="google"] {
+            color: red;
+            font-weight: bold;
+        }
+
+        a[href^="https"] {
+            color: blue;
+        }
+
+        a[href$=".org"] {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Attribute Selector Example</h2>
+
+    <p>Links with different attributes:</p>
+    <a href="https://www.google.com">Google</a><br>
+    <a href="https://www.youtube.com">Youtube</a><br>
+    <a href="http://www.unknown.org">Unknown Site</a><br>
+
+    <p>Input fields:</p>
+    <input type="text" placeholder="Enter text here"><br>
+    <input type="password" placeholder="Enter password"><br>
+    
+</body>
+</html>

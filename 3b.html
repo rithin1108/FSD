@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors Example</title>
+    <style>
+        div p {
+            background-color: yellow;
+        }
+
+        div > p {
+            color: blue;
+        }
+
+        h2 + p {
+            font-weight: bold;
+        }
+
+        h2 ~ p {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Combinator Selectors Example</h2>
+    
+
+    <div>
+        <p>This is a paragraph inside the div (descendant selector and child selector applied).</p>
+        <p>This is another paragraph inside the div (descendant selector and child selector applied).</p>
+        <section>
+            <p>This is a paragraph inside a section element, which is still a descendant of the div (descendant selector applied).</p>
+        </section>
+    </div>
+
+    <h2>Sibling Selectors</h2>
+    <p>This paragraph comes after the h2 element and will have bold text (adjacent sibling  and general sibling selector applied).</p>
+    <p>This paragraph is a general sibling of the h2, so it will have color blue (general sibling selector applied).</p>
+
+</body>
+</html>

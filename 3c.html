@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Links Based on State</title>
+    <style>
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:hover {
+            color: hotpink;
+        }
+
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Styling a Link Depending on State</h2>
+
+    <p><b><a href="https://www.w3schools.com" target="_blank">This is an unvisited link</a></b></p>
+    <p><b>Note:</b> The <code>a:hover</code> MUST come after <code>a:link</code> and <code>a:visited</code> in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> The <code>a:active</code> MUST come after <code>a:hover</code> in the CSS definition in order to be effective.</p>
+
+</body>
+</html>

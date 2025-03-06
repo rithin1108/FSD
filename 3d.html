@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Examples</title>
+    <style>
+        p::first-letter {
+            font-weight: bold;
+        }
+
+        p::first-line {
+            font-style: italic;
+        }
+
+        h2::before {
+            content: "★ ";
+            color: gold;
+        }
+
+        h2::after {
+            content: " ★";
+            color: gold;
+        }
+
+        ul li::marker {
+            color: red;
+        }
+
+        .dialog-box {
+            background-color: white;
+            border: 2px solid black;
+           
+        }
+
+        .dialog-box::before {
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dialog Box Example</h2>
+    <div class="dialog-box">
+        <p>This is a dialog box with a viewbox behind it.</p>
+    </div>
+
+    <h2>Styling Example: First Letter and First Line</h2>
+    <p>Welcome to FSD Lab</p>
+
+    <h2>List Item Markers</h2>
+    <ul>
+        <li>First</li>
+        <li>Second </li>
+        <li>Third </li>
+    </ul>
+
+</body>
+</html>
